@@ -409,7 +409,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
         uint deadline
     ) external;
 }
-contract RhllorInu is ERC20, Ownable {
+contract ShufflerRelief is ERC20, Ownable {
     using SafeMath for uint256;
     IUniswapV2Router02 public immutable uniswapV2Router;
     address public immutable uniswapV2Pair;
@@ -459,7 +459,7 @@ contract RhllorInu is ERC20, Ownable {
 
     Distribution public distribution;
 
-    constructor(address utility1Addr, address utility2Addr, address utility3Addr, address utility4Addr) ERC20("Token of Fire", "Rhllor") {
+    constructor(address utility1Addr, address utility2Addr, address utility3Addr, address utility4Addr) ERC20("Shuffler Relief", "SHUFFLER") {
         utility1Address = utility1Addr;
         utility2Address = utility2Addr;
         utility3Address = utility3Addr;
